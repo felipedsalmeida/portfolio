@@ -1,0 +1,123 @@
+.projects .title::after{
+    content: "Realizados";
+}
+
+.projects .carousel .card{
+    height: 750px;
+    border: #CCCCCC 3px solid;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.projects .carousel .card:hover{
+    background: var(--primary-color);
+    border: var(--primary-color) 3px solid;
+}
+
+.projects .carousel .card figure{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 5px solid var(--gray);
+    transition: all 0.3s ease;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.projects .carousel .card img{
+    width: 100%;
+}
+
+.projects .carousel .card:hover img{
+    border-color: var(--white-default);
+}
+
+.projects .carousel .card .box{
+    display: flex;
+    height: 100%;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.projects .carousel .card .box p{
+    color: var(--gray-222);
+    text-align: justify;
+}
+
+.projects .carousel .card:hover .box p{    
+    color: var(--white-default);
+}
+
+.projects .carousel .card .icon{
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.projects .carousel .card:hover ion-icon{
+    color: var(--white-default);
+}
+
+.projects .carousel .card ion-icon{
+    width: 38px;
+    height: 38px;
+    color: var(--primary-color);
+}
+
+.projects .carousel .card:hover ion-icon:hover{
+    color: var(--gray-222);
+}
+
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card .text a{
+    color: var(--primary-color);
+}
+
+
+.projects .carousel .card:hover .text a{
+    color: var(--white-default);
+}
+
+.projects .carousel .card:hover .text a:hover{
+    color: var(--gray-222);
+}
+
+.projects .carousel .card .tech-project{    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.projects .carousel .card .tech-project span{
+    width: calc(100% - 35px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+    border: 2px solid var(--gray);
+    border-radius: 6px;
+    color: var(--primary-color);
+}
+
+.projects .carousel .card:hover .tech-project span{
+    color: var(--white-default);
+    border: var(--white-default) 2px solid;
+}

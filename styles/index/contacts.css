@@ -1,0 +1,102 @@
+.contact .title::after{
+    content: "Fale Conosco";
+}
+.contact .contact-content{
+    align-items: flex-start;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+
+
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .row .info .sub-title{
+    font-size: 14px;
+    color: var(--gray);
+}
+.contact .contact-content .row ion-icon{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.contact .right .box{
+    width: 45px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.contact .right .box:hover{
+    width: 200px;
+    background: var(--linkedin);
+    border-radius: 35px;
+    color: var(--white-default);
+    box-shadow: 0 0 50px var(--linkedin-shadow);
+}
+
+.contact .right .box:nth-child(2):hover{
+    background: var(--whatsapp);
+    box-shadow: 0 0 50px var(--whatsapp-shadow);
+}
+.contact .right .box:nth-child(3):hover{
+    background: var(--github);
+    box-shadow: 0 0 50px var(--github-shadow);
+}
+
+.contact .right p{
+    transform: translate(60px);
+}
+
+.contact .right .box .icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-default);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 1s ease;
+}
+
+.contact .right .box:hover .icon{
+    background: var(--white-default);
+    color: var(--gray-333);
+    box-shadow: 0 0 20px var(--shadow-026);
+}
+
+.linkedin{
+    background-color: var(--linkedin);
+}
+.whatsapp{
+    background-color: var(--whatsapp);
+}
+.github{
+    background-color: var(--github);
+}

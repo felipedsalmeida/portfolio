@@ -1,0 +1,58 @@
+.technologies, .contact{
+    background: var(--gray-111);
+    color: var(--white-default);
+}
+
+.technologies .title::before,
+.contact .title::before{
+    background: var(--white-default);
+}
+.technologies .title::after {
+    content: "Que domino";
+}
+.technologies .title::after, .contact .title::after{
+    background: var(--gray-111);
+    
+}
+
+.technologies .tech-content{
+    justify-content: center;
+}
+
+.technologies .tech-content .card{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-222);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.technologies .tech-content .card:hover {
+    background: var(--primary-color);
+}
+.technologies .tech-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.technologies .tech-content .card:hover .box{
+    transform: scale(1.05);
+}
+.technologies .tech-content .card ion-icon{
+    font-size: 70px;
+    color: var(--primary-color);
+}
+
+.technologies .tech-content .card:hover ion-icon{
+    color: var(--white-default);
+}
+.technologies .tech-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}

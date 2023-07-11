@@ -69,7 +69,7 @@ html{
 
 .home {
     display: flex;
-    background: url(image/background-3.jpg) no-repeat;
+    background: url(../image/background-3.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
     color: #FFFFFF;
@@ -203,7 +203,7 @@ section .title::after {
 /* Sessão Sobre */
 
 .about .title::after{
-    content: "Quem sou eu";
+    content: "Who I am";
 }
 
 .about .about-content .left{
@@ -263,10 +263,12 @@ section .title::after {
 .contact .title::before{
     background: #FFFFFF;
 }
-.technologies .title::after,
-.contact .title::after{
+.technologies .title::after {
+    content: "That I know";
+}
+.technologies .title::after, .contact .title::after{
     background: #111;
-    content: "Que domino";
+    
 }
 
 .technologies .tech-content{
@@ -395,7 +397,7 @@ section .title::after {
 
 /* Sessão Projetos */
 .projects .title::after{
-    content: "Realizados";
+    content: "Done";
 }
 
 .projects .carousel .card{
@@ -540,7 +542,7 @@ section .title::after {
 
 /* Sessão Contato */
 .contact .title::after{
-    content: "Fale conosco";
+    content: attr(data-content) "";
 }
 .contact .contact-content{
     align-items: flex-start;
@@ -728,17 +730,17 @@ a.es::before{
 
 
 
-.language-selected.change-br::before{
+/* .language-selected.change-br::before{
     background-image: url(https://flagsapi.com/BR/flat/64.png);
-}
+} */
 
-.language-selected.change-en::before{
+.language-selected::before{
     background-image: url(https://flagsapi.com/US/flat/64.png);
 }
 
-.language-selected.change-es::before{
+/* .language-selected.change-es::before{
     background-image: url(https://flagsapi.com/ES/flat/64.png);
-}
+} */
 
 
 
