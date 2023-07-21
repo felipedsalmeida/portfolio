@@ -4,7 +4,7 @@
 
 .projects .carousel .card{
     height: 750px;
-    border: #CCCCCC 3px solid;
+    border: var(--gray) 3px solid;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -98,9 +98,10 @@
     color: var(--gray-222);
 }
 
-.projects .carousel .card .tech-project{    
-    width: 100%;
+.projects .carousel .card .tech-project{
     display: flex;
+    width: 100%;
+    max-width: 300px;
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;

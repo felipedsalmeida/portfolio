@@ -1,5 +1,5 @@
 .menu-btn{
-    color: #FFFFFF;
+    color: var(--white-default);
     font-size: 26px;
     cursor: pointer;
     display: none;
@@ -13,8 +13,8 @@
     bottom: 10px;
     text-align: center;
     line-height: 50px;
-    color: #FFFFFF;
-    background: #B40E1A;
+    color: var(--white-default);
+    background: var(--primary-color);
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;

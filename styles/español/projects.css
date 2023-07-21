@@ -4,7 +4,7 @@
 
 .projects .carousel .card{
     height: 750px;
-    border: #CCCCCC 3px solid;
+    border: var(--gray) 3px solid;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;

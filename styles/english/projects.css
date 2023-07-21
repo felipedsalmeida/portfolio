@@ -3,8 +3,8 @@
 }
 
 .projects .carousel .card{
-    min-height: 600px;
-    border: #CCCCCC 3px solid;
+    height: 750px;
+    border: var(--gray) 3px solid;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -13,15 +13,15 @@
 
 
 .projects .carousel .card:hover{
-    background: #B40E1A;
-    border: #B40E1A 3px solid;
+    background: var(--primary-color);
+    border: var(--primary-color) 3px solid;
 }
 
 .projects .carousel .card figure{
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
-    border: 5px solid #CCCCCC;
+    border: 5px solid var(--gray);
     transition: all 0.3s ease;
     background-size: cover;
     overflow: hidden;
@@ -32,7 +32,7 @@
 }
 
 .projects .carousel .card:hover img{
-    border-color: #FFFFFF;
+    border-color: var(--white-default);
 }
 
 .projects .carousel .card .box{
@@ -54,7 +54,7 @@
 }
 
 .projects .carousel .card:hover .box p{    
-    color: #FFFFFF;
+    color: var(--gray-222);
 }
 
 .projects .carousel .card .icon{
@@ -65,17 +65,17 @@
 }
 
 .projects .carousel .card:hover ion-icon{
-    color: #FFFFFF;
+    color: var(--white-default);
 }
 
 .projects .carousel .card ion-icon{
     width: 38px;
     height: 38px;
-    color: #B40E1A;
+    color: var(--primary-color);
 }
 
 .projects .carousel .card:hover ion-icon:hover{
-    color: #222;
+    color: var(--gray-222);
 }
 
 .projects .carousel .card .text{
@@ -85,35 +85,38 @@
 }
 
 .projects .carousel .card .text a{
-    color: #B40E1A;
+    color: var(--primary-color);
 }
 
 
 .projects .carousel .card:hover .text a{
-    color: #FFFFFF;
+    color: var(--white-default);
 }
 
 .projects .carousel .card:hover .text a:hover{
-    color: #222;
+    color: var(--gray-222);
 }
 
 .projects .carousel .card .tech-project{
-    margin-top: 15px;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 12px;
-    overflow-x: scroll;
+    flex-wrap: wrap;
 }
 
 .projects .carousel .card .tech-project span{
+    width: calc(100% - 35px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 4px 6px;
-    border: 2px solid #CCCCCC;
+    border: 2px solid var(--gray);
     border-radius: 6px;
-    color: #B40E1A;
+    color: var(--primary-color);
 }
 
 .projects .carousel .card:hover .tech-project span{
-    color: #FFFFFF;
-    border: #FFFFFF 2px solid;
+    color: var(--white-default);
+    border: var(--white-default) 2px solid;
 }
